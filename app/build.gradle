@@ -66,7 +66,20 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
     //Icons
     implementation "androidx.compose.material:material-icons-extended"
+
     def nav_version = "2.6.0"
     implementation "androidx.navigation:navigation-compose:$nav_version"
     implementation("io.coil-kt:coil-compose:2.4.0")
+    //viewModel
+    //not necessary
+
+    //Hilt -Dependency injection tool
+    implementation"androidx.hilt:hilt-navigation:1.1.0-alpha02"
+    implementation "androidx.hilt:hilt-navigation-fragment:1.1.0-alpha02"
+
+    //room
+    def room_version = "2.5.2"
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
 }
